@@ -1,7 +1,7 @@
 import os
 import tempfile
 from typing import List
-from gTTS import gTTS
+from gtts import gTTS
 from moviepy.editor import TextClip, ColorClip, CompositeVideoClip, AudioFileClip, concatenate_videoclips
 from narration_extractor import SceneScript
 
