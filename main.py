@@ -31,7 +31,7 @@ def generate_full_pipeline(req: PipelineRequest):
     # 1. Geminiで台本生成
     prompt = f"テーマ「{req.theme}」でSNS短尺動画(12シーン)の台本をJSON生成してください。キーは scene_index, visual_description, narration_text。"
     res = client.models.generate_content(
-        model="gemini-2.0-flash",
+        model="gemini-1.5-flash",
         contents=prompt,
         config=types.GenerateContentConfig(response_mime_type="application/json")
     )
